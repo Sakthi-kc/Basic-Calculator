@@ -1,0 +1,41 @@
+*{
+	font-family: 'PT Serif', italic;
+	font-size: 20px;
+}
+body{
+	margin:0;
+	padding:0;
+	background-image: url("y.jpg");
+	background-repeat: no-repeat;
+	background-size: 104%;
+	text-align:center;
+	position:relative;
+	top:5%;
+	bottom:-60px;
+	left: 15%;
+	transform: translateX(-15%);
+}
+#calc
+{
+	opacity: 0.2px;
+}
+textarea{
+	color: #000;
+	background: #F0FFFF;
+	display: block;
+	size: 80px;
+	left: 42%;
+	position: relative;
+	resize: none;
+}
+button{
+	border-radius: 10px;
+	background-color: #990012;
+	color: #fff;
+	padding: 20px;
+	margin: 4px;
+}
+button:hover{
+	background-color: #C11B17;
+	color: black;
+}
