@@ -6,33 +6,39 @@ body{
 	margin:0;
 	padding:0;
 	background-image: url("y.jpg");
-	background-repeat: no-repeat;
-	background-size: 104%;
+	height: 100vh; 
+	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
 	text-align:center;
 	position:relative;
-	top:5%;
-	bottom:-60px;
 	left: 15%;
 	transform: translateX(-15%);
 }
-#calc
-{
-	opacity: 0.2px;
+#calc{
+	margin: 0 auto 0 auto;
 }
+@media screen and (min-width: 768px)
+{
+	#calc{
+		width: 700px;
+		height: 500px;
+	}
+} 
 textarea{
 	color: #000;
 	background: #F0FFFF;
 	display: block;
-	size: 80px;
-	left: 42%;
-	position: relative;
+	margin: 0 auto;
 	resize: none;
 }
 button{
-	border-radius: 10px;
+	width: 70px;
+	height: 60px;
+	border-radius: 20px;
 	background-color: #990012;
 	color: #fff;
-	padding: 20px;
+	padding: 5px;
 	margin: 4px;
 }
 button:hover{
