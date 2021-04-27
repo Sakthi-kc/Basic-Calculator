@@ -3,20 +3,20 @@ function add(){
 	var y=+document.getElementById('two').value;
 	var z=x+y;
 	if(isNaN(z)){
-		alert('Error:Enter Integer')
+		swal("Warning", "Enter numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	if((document.getElementById('one').value=="") || (document.getElementById('two').value=="")){
-		alert('Enter number')
+		swal("Warning", "Enter 2 numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	document.getElementById('one').value = x;
 	document.getElementById('two').value = y;
-	document.getElementById('three').value = z;
+	document.getElementById('three').innerHTML = z;
 	console.log(z);
 }
 function sub(){
@@ -24,20 +24,20 @@ function sub(){
 	var y=+document.getElementById('two').value;
 	var z=x-y;
 	if(isNaN(z)){
-		alert('Error:Enter Integer')
+		swal("Warning", "Enter numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	if((document.getElementById('one').value=="") || (document.getElementById('two').value=="")){
-		alert('Enter number')
+		swal("Warning", "Enter 2 numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	document.getElementById('one').value = x;
 	document.getElementById('two').value = y;
-	document.getElementById('three').value = z;
+	document.getElementById('three').innerHTML = z;
 	console.log(z);
 }
 function mul(){
@@ -45,20 +45,20 @@ function mul(){
 	var y=+document.getElementById('two').value;
 	var z=x*y;
 	if(isNaN(z)){
-		alert('Error:Enter Integer')
+		swal("Warning", "Enter numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	if((document.getElementById('one').value=="") || (document.getElementById('two').value=="")){
-		alert('Enter number')
+		swal("Warning", "Enter 2 numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	document.getElementById('one').value = x;
 	document.getElementById('two').value = y;
-	document.getElementById('three').value = z;
+	document.getElementById('three').innerHTML = z;
 	console.log(z);
 }
 function div(){
@@ -66,25 +66,25 @@ function div(){
 	var y=+document.getElementById('two').value;
 	var z=x/y;
 	if(isNaN(z)){
-		alert('Error:Enter Integer')
+		swal("Warning", "Enter numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	if((document.getElementById('one').value=="") || (document.getElementById('two').value=="")){
-		alert('Enter number')
+		swal("Warning", "Enter 2 numbers!", "error");
 		x=null;
 		y=null;
 		z=null;
 	}
 	document.getElementById('one').value = x;
 	document.getElementById('two').value = y;	
-	document.getElementById('three').value = z;
+	document.getElementById('three').innerHTML = z;
 	console.log(z);
 }
 function clr()
 {
 	document.getElementById('one').value="";
 	document.getElementById('two').value="";
-	document.getElementById('three').value="";
+	document.getElementById('three').innerHTML="";
 }

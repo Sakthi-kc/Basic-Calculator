@@ -9,25 +9,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="calc.css">
 </head>
 <body>
 	<div id="calc">
-		<br><br>
-		<textarea id='one' placeholder="Enter no1"></textarea>
+		<textarea id='one' placeholder="Enter value 1"></textarea>
 		<br>
-		<textarea id='two' placeholder="Enter no2"></textarea>
+		<textarea id='two' placeholder="Enter value 2"></textarea>
 		<br>
-		<button onclick="add()">ADD</button>
-		<button onclick="sub()">SUB</button>
+		<button id="add" onclick="add()">ADD</button>
+		<button id="sub" onclick="sub()">SUB</button>
 		<br>
-		<button onclick="mul()">MUL</button>
-		<button onclick="div()">DIV</button>
-		<br><br>
-		<textarea id='three' placeholder="Result"></textarea>
+		<button id="mul" onclick="mul()">MUL</button>
+		<button id="div" onclick="div()">DIV</button>
 		<br>
+		<p id="three"></p>
+		<button id="clr" onclick="clr()">CLEAR</button>
 	</div>
-		<button onclick="clr()">CLEAR</button>
+		
 	<script type="text/javascript" src="add.js"></script>
 </body>
 </html>
+		
