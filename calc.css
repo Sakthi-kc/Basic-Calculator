@@ -5,11 +5,11 @@
 body{
 	margin:0;
 	padding:0;
-	background-image: url("mmm.jpg");
+	background-image: url("y.jpg");
 	height: 100vh; 
 	background-position: center;
+	background-size: cover;
  	background-repeat: no-repeat;
-  	background-size: cover;
 	text-align:center;
 	position:relative;
 	left: 15%;
@@ -38,7 +38,7 @@ textarea{
 }
 ::-webkit-input-placeholder {
   	opacity: 0.8;
-  	color: silver;
+  	color: #D3D3D3;
 }
 button{
 	width: 70px;
